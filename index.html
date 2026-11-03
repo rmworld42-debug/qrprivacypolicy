@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - ScanMaster: QR &amp; Barcode Scanner</title>
+    <style>
+        :root {
+            --primary: #1D4ED8;
+            --primary-dark: #0B172A;
+            --text-main: #1E293B;
+            --text-muted: #64748B;
+            --bg: #F8FAFC;
+            --card-bg: #FFFFFF;
+            --border: #E2E8F0;
+            --accent: #06B6D4;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --text-main: #F1F5F9;
+                --text-muted: #94A3B8;
+                --bg: #070D18;
+                --card-bg: #0F172A;
+                --border: #1E293B;
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            line-height: 1.7;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 2.5rem;
+            border-radius: 1.25rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border);
+        }
+
+        .header {
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(29, 78, 216, 0.1);
+            color: var(--primary);
+            font-size: 0.8rem;
+            font-weight: 600;
+            padding: 0.3rem 0.8rem;
+            border-radius: 9999px;
+            margin-bottom: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .meta {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-top: 1.75rem;
+            margin-bottom: 0.75rem;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--text-main);
+        }
+
+        ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-main);
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .highlight-box {
+            background: rgba(6, 182, 212, 0.08);
+            border-left: 4px solid var(--accent);
+            padding: 1.2rem;
+            border-radius: 0.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .highlight-box p {
+            margin: 0;
+            font-size: 0.95rem;
+        }
+
+        .contact-box {
+            background: rgba(29, 78, 216, 0.05);
+            border: 1px solid var(--border);
+            padding: 1.5rem;
+            border-radius: 0.75rem;
+            margin-top: 2rem;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 3rem;
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border);
+            padding-top: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <span class="badge">Official Policy</span>
+        <h1>Privacy Policy</h1>
+        <p class="meta"><strong>ScanMaster: QR &amp; Barcode Scanner</strong> • Effective Date: November 3, 2026</p>
+    </div>
+
+    <div class="highlight-box">
+        <p><strong>Core Privacy Guarantee:</strong> ScanMaster is engineered on an offline-first, on-device architecture. We do not track, collect, transmit, sell, or monetize your scanned data or camera images. All barcode optical recognition is computed directly on your device.</p>
+    </div>
+
+    <h2>1. Introduction</h2>
+    <p>This Privacy Policy explains how <strong>ScanMaster: QR &amp; Barcode Scanner</strong> ("we", "our", or "the App") respects and protects your privacy. We are committed to transparency regarding any technical permissions and device functions utilized by the App.</p>
+
+    <h2>2. Data Processing &amp; On-Device Analysis</h2>
+    <p>All camera frames processed during scanning are handled strictly in device volatile memory (RAM) using Google ML Kit on-device barcode scanning:</p>
+    <ul>
+        <li><strong>No Cloud Uploads:</strong> Camera frames are analyzed frame-by-frame on your processor and are immediately discarded. No video, photo, or visual information is ever uploaded to any cloud server or external backend.</li>
+        <li><strong>Offline Capability:</strong> Core scanning and QR code generation operate 100% offline without requiring internet access.</li>
+    </ul>
+
+    <h2>3. Information Storage on Your Device</h2>
+    <p>ScanMaster provides scan history and saved code functionality for user convenience:</p>
+    <ul>
+        <li><strong>Local Database:</strong> Scanned barcodes, generated QR codes, and favorite records are stored locally on your device in a secure SQLite database (Room).</li>
+        <li><strong>User Control:</strong> You have complete control to search, delete individual scan entries, or wipe the entire history at any time through the in-app Settings.</li>
+        <li><strong>Uninstallation:</strong> Uninstalling the application automatically removes all locally saved databases and records.</li>
+    </ul>
+
+    <h2>4. Device Permissions We Request</h2>
+    <p>ScanMaster asks only for permissions strictly necessary for user-initiated functions:</p>
+    <ul>
+        <li><strong>Camera (<code>android.permission.CAMERA</code>):</strong> Required solely to capture optical video frames for real-time QR and barcode detection. Requested at runtime only when you navigate to the scanner screen.</li>
+        <li><strong>Haptic / Vibration (<code>android.permission.VIBRATE</code>):</strong> Used to provide tactile feedback pulse when a barcode is successfully detected. This can be toggled on/off in Settings.</li>
+        <li><strong>Internet Access (<code>android.permission.INTERNET</code>):</strong> Used strictly for user-requested optional actions, such as fetching public product metadata from Open Food Facts or opening web links in your browser upon confirmation.</li>
+        <li><strong>Gallery Access (Photo Picker):</strong> Uses the standard zero-permission Android Photo Picker when you choose to scan a barcode from an existing photo in your gallery.</li>
+    </ul>
+
+    <h2>5. Safe Link Verification</h2>
+    <p>ScanMaster includes proactive security features to safeguard users against malicious links. When a QR code contains an external URL, the app alerts the user, highlights encryption status (HTTPS vs HTTP), and prompts for explicit confirmation before launching your default web browser.</p>
+
+    <h2>6. Third-Party Services &amp; Libraries</h2>
+    <p>The application integrates the following industry-standard, trusted libraries:</p>
+    <ul>
+        <li><strong>Google ML Kit (Barcode Scanning):</strong> Runs locally on-device under Google's standard developer terms.</li>
+        <li><strong>Open Food Facts API:</strong> When scanning commercial product barcodes (UPC/EAN), the app queries the public Open Food Facts open-source database to display product details if available. No personal identifiers are transmitted with these queries.</li>
+        <li><strong>ZXing Core:</strong> Used solely for mathematical generation and matrix encoding of QR code graphics on-device.</li>
+    </ul>
+
+    <h2>7. Children's Privacy</h2>
+    <p>ScanMaster does not address or knowingly collect personal information from children under the age of 13. The application is a general-purpose utility suitable for all ages without age-gated profiling or data collection.</p>
+
+    <h2>8. Changes to This Privacy Policy</h2>
+    <p>We may update our Privacy Policy periodically to reflect app updates or regulatory standards. Any changes will be published here with an updated "Effective Date".</p>
+
+    <div class="contact-box">
+        <h2>9. Contact Us</h2>
+        <p>If you have questions, feedback, or inquiries regarding this Privacy Policy or your data, please contact the developer directly at:</p>
+        <p><strong>Email:</strong> <a href="mailto:rmworld42@gmail.com">rmworld42@gmail.com</a></p>
+    </div>
+
+    <footer>
+        &copy; 2026 ScanMaster: QR &amp; Barcode Scanner. All rights reserved.
+    </footer>
+</div>
+
+</body>
+</html>
